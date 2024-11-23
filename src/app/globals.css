@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ededed;
+  --foreground: #171717;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Poppins, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .botao-calc {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    backdrop-filter: blur(20px);
+    text-align: center;
+    transition: all .2s ease-in-out; /* Transição suave para outras mudanças */
+  }
+  
+  .botao-calc:hover {
+    scale: 1.1;
+  }
+
+  .image {
+    background: url("/img/sol.jpg");
+    background-position: center;
+  }
+
+  .titulo-energia {
+    font-family: Abel;
+    line-height: 1.25;
+    font-size: 3vw
+  } 
+  
+  .subtitulo-energia {
+    margin-top: 12px;
+    font-size: 1.75vw;
+    line-height: 1.25;
+  }
+
+  .segunda-tela {
+    font-family: Abel;
+  }
+
+  .input-contato {
+    font-family: Abel;
+    background: transparent;
+    border-bottom: 1px solid #0000005d;
+  }
+
+  .input-contato:focus {
+    outline: none;
+  }
+
+  .input {
+    width: 4.25vw;
+    margin-left: 1vw;
+    border-radius: .5rem;
+    outline: none;
+    padding: .3vw;
+  }
+}
